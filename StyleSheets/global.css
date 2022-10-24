@@ -18,8 +18,22 @@ body{
 
 nav{
     color: #ff8503;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 a:visited{
     color: #10e0c8;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul a {
+    display: list-item;
+    padding: .5rem;
+    font: bold;
 }
