@@ -1,5 +1,7 @@
-header{
-    text-align: left; /*This is to keep the logo towards the left*/
+header img{
+    position: absolute;
+    top: 0px;
+    left: 0px; /*This is to keep the logo towards the left*/
 }
 
 h1 {
