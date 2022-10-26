@@ -27,12 +27,12 @@ a:visited{
     color: #10e0c8;
 }
 
-li {
+nav li {
     list-style-type: none;
     display: inline-block;
 }
 
-ul a {
+nav ul a {
     display: list-item;
     padding: .5rem;
     font: bold;
