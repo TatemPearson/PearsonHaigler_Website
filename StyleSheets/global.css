@@ -1,9 +1,18 @@
 /*This is a stylesheet meant to contain universal features across all web pages*/ 
 /*Can be overridden if the needs of a certain page changes*/ 
+*{
+    box-sizing: border-box;
+}
+
 header img{
     position: absolute;
     top: 0px;
     left: 0px; /*This is to keep the logo towards the left*/
+}
+
+.HomeImage{
+    justify-content: center;
+    padding: 50px; 
 }
 
 h1 {
@@ -16,6 +25,8 @@ body{
     background-color: black;
     color: #ff8503;
     text-align: center;
+    font-size: 16px; 
+    line-height: 1.0; 
 }
 
 nav{
@@ -38,4 +49,30 @@ nav ul a {
     display: list-item;
     padding: .5rem;
     font: bold;
+}
+
+footer{ 
+    font-size: 20px; 
+}
+
+footer li{
+    list-style-type: none; 
+    display: inline-block; 
+    padding: 1rem; 
+}
+
+footer li .HomeButtons{
+    background-color: grey;
+    font-size: 20px; 
+    border: #ff8503 groove 8px; 
+    padding: .5 rem; 
+}
+
+footer li .HomeButtons a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li .HomeButtons a:hover{
+    color:#ff8503; 
 }
