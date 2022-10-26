@@ -1,3 +1,5 @@
+/*This is a stylesheet meant to contain universal features across all web pages*/ 
+/*Can be overridden if the needs of a certain page changes*/ 
 header img{
     position: absolute;
     top: 0px;
