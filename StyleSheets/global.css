@@ -6,7 +6,7 @@
 
 header img{
     position: absolute;
-    top: 0px;
+    top: -15px;
     left: 0px; /*This is to keep the logo towards the left*/
 }
 
