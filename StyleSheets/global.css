@@ -17,9 +17,9 @@ header img{
 
 /*For the text at the top of each page*/
 h1 {
-    text-align: center;
     font-size: 50px;
-    color: #ff8503; 
+    color: #ff8503;
+   align-content:center; 
 }
 
 /*Styling for the content of each page*/
