@@ -16,6 +16,10 @@ header img{
 }
 
 /*For the text at the top of each page*/
+header .PageTitle{
+    border: #ff8503 groove 8px; 
+}
+
 h1 {
     font-size: 50px;
     color: #ff8503;
