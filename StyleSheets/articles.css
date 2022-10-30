@@ -1,4 +1,5 @@
 /*This addresses styling of each paragraph/division of content*/ 
+/*They are handled like this to give the option to style each article independently*/ 
 /*History Tab*/
 #IBMPC{
     text-align: left;
