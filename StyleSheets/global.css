@@ -79,9 +79,15 @@ nav .DropdownContent li{
 
 
 nav .DropdownContent li a {
+    text-decoration: none;
+    color: black;
     padding: .5rem;
     font: bold;
 }
+
+nav .DropdownContent li a:hover{
+    color:#ff8503; 
+} 
 
 /*the footer of the home page (wanted the navigation at the bottom and more stylized)*/
 footer{ 
