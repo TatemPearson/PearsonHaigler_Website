@@ -40,23 +40,45 @@ body{
 
 /*The navigation bar for each page (will become a dropdown menu most likely)*/
 nav{
-    color: #ff8503;
+    color:#ff8503;
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: 0px;
+}
+
+nav .DropdownButton{
+    background-color: grey;
+    font-size: 20px; 
+    border: #ff8503 groove 8px; 
+    padding: .5 rem;  
+}
+
+nav .DropdownButton:hover{
+    color:#ff8503
+}
+
+nav .DropdownContent li{
+    display: none; 
+    position: relative; 
+    border: #ff8503 groove 8px;
+    background-color: grey;
+}
+
+nav:hover .DropdownContent li{
+    display:block; 
+    position: relative; 
 }
 
 a:visited{
     color: #10e0c8;
 }
 
-nav li {
+nav .DropdownContent li{ 
     list-style-type: none;
-    display: inline-block;
 }
 
-nav ul a {
-    display: list-item;
+
+nav .DropdownContent li a {
     padding: .5rem;
     font: bold;
 }
