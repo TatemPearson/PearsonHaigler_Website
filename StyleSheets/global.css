@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-header img{
+header img{/*puts the logo in the top left of each tab*/ 
     position: absolute;
     top: 5px;
     left: 0px; /*This is to keep the logo towards the left*/
 }
 
-.HomeImage{
+.HomeImage{/*Centers the image of the home page*/ 
     justify-content: center;
     padding: 50px; 
 }
 
 /*For the text at the top of each page*/
-header .PageTitle{
+header .PageTitle{ /*Creates a border for the title of each page, removing the right and left borders*/ 
     border: #ff8503 groove 8px; 
     border-left: 0px;
     border-right: 0px; 
@@ -64,12 +64,12 @@ nav .DropdownContent li{ /*The list items in the nav tab, by default you only se
     background-color: grey;
 }
 
-nav:hover .DropdownContent li{ /*Hovering over the Nav button displays the list of other website tabs*/ 
+nav:hover .DropdownContent li{ /*Hovering over the Nav button displays the list of other website tabs (which is the unordered list in the nav section)*/ 
     display:block; 
     position: relative;  
 }
 
-a:visited{
+a:visited{/*changes the color when a link is visited*/ 
     color: #10e0c8;
 }
 

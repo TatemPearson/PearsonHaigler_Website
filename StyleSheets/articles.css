@@ -1,6 +1,10 @@
 /*This addresses styling of each paragraph/division of content*/ 
 /*They are handled like this to give the option to style each article independently*/ 
 /*History Tab*/
+p {/*Setting margins for all paragraphs*/
+    margin-left: 0px; 
+    margin-right: 750px;  
+}
 #IBMPC{
     text-align: left;
 }
