@@ -2,8 +2,10 @@
 /*They are handled like this to give the option to style each article independently*/ 
 /*History Tab*/
 p {/*Setting margins for all paragraphs*/
+    min-width: 500px; 
+    max-width: 750px; 
     margin-left: 0px; 
-    margin-right: 750px;  
+    margin-right: auto;  
 }
 #IBMPC{
     text-align: left;
