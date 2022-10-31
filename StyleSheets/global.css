@@ -50,7 +50,7 @@ nav .DropdownButton{
     background-color: grey;
     font-size: 20px; 
     border: #ff8503 groove 8px; 
-    padding: .5 rem;  
+    padding: 0.5 rem;  
 }
 
 nav .DropdownButton:hover{
@@ -104,7 +104,7 @@ footer li .HomeButtons{
     background-color: grey;
     font-size: 20px; 
     border: #ff8503 groove 8px; 
-    padding: .5 rem; 
+    padding: 0.5 rem; 
 }
 
 footer li .HomeButtons a {
