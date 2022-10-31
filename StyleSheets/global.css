@@ -66,7 +66,7 @@ nav .DropdownContent li{ /*The list items in the nav tab, by default you only se
 
 nav:hover .DropdownContent li{ /*Hovering over the Nav button displays the list of other website tabs*/ 
     display:block; 
-    position: relative; 
+    position: relative;  
 }
 
 a:visited{
