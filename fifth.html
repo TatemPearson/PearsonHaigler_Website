@@ -14,8 +14,32 @@
         </div>
     </header> 
      <main>
-        <div id=screen> <!--Keyboard Container-->
-          <img src = Images/Picture9.png alt ="Example of screen problems"> <!--Other pics will be used as well, is too sloppy to dump them all unstyled-->
+        <div id=screen> <!--Screen Container-->
+          <div class="ScreenSlideShow"><!--Slideshow container-->
+            <div class="ScreenSlides"> <!--Slides-->
+              <div class="SlideNum">1/4</div>
+              <img src = Images/Picture9.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Example of pale orange lines as a result of shorts</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">2/4</div>
+              <img src = Images/ScreenProblemEx1.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Example of dead spots and bright streaks of vertical pixels</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">3/4</div>
+              <img src = Images/ScreenProblemEx2.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">More severe bright lines and foggy screen</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">4/4</div>
+              <img src = Images/ScreenProblem3.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Screen on first power up of this unit</div>
+            </div>
+            <!--Slideshow buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&laquo;</a>
+            <a class="next" onclick="plusSlides(1)">&raquo;</a>
+          </div>
           <h2>Plasma Screen</h2>
           <p>
             What sets the Portable III apart from its predecesors is the amber gas plasma display. 
@@ -26,7 +50,30 @@
             heat and cold puts a strain on the solder joints of the column drivers. Dead spots indicate circuits that are failing to transport power at all. Bad electrolytic capacitors
             can also cause a "fog" to appear on screen. Be very careful when working on this part, the flex and ribbon cables are very delicate in addition to high voltage. 
             When cleaning this part, the technician's manual states to ONLY use isopropyl alcohol when cleaning the inside of the screen, in addition it is also reccommended 
-            by hobbyists to use the strongest alcohol you can find when doing so. 
+            by hobbyists to use the strongest alcohol you can find when doing so. <br>
+
+            <img src= Images/ColumnDriver.png width="200" height="150"><br>
+            The column driver ICs are the biggest points of failure, each leg of this chip controls one horizontal or vertical line of pixels on the screen, in total they make 
+            a resolution of 640x400 pixels. Note that the horizontal column drivers are located underneath side panels, making them tricky to access.  <br> 
+            <img src= Images/ScreenRev1.png width="200" height="150"><img src= Images/ScreenRev2.png width="200" height="150"><br> 
+            There are two hardware revisions to the screen. Revision 1 (left) is typically found on 286 models while Revision 2 (right) is found on 386 models. 
+            These are both interchangable with each other which makes the repair option of using oldstock or a donor unit (a unit that is beyond repair but had a working part
+            that can be repurposed for use on a repairable one) relatively easy. However, the amount of donor units and new old stock are becoming increasingly rare and expensive, 
+            and the intent of this article is to attempt to repair these screens. Screen Revision 2 may be easier to repair due to its side panels being accessible by screw. 
+            Revision one is held in place by plastic buttons which will have to be pried off and replaced if the horizontal drivers need attention. Note that the central 
+            PCB is screwed down by Pozidriv screws, so make sure to get the proper screwdiver, as a phillips screwdriver will only strip the screws. After the screws, the PCB
+            is held down by 4 white ribbon cables. Removing these is also tricky because of how little slack they have and the face that oxidation may crudely weld them in place, 
+            which deoxit can fix. Though without those problems you should be able to wiggle them out. <br> 
+            <img src= Images/BadCaps.png width="200" height="150"><br> 
+            These are the only two electrolytic capacitors on Screen Revision 1, as you can see in this case, there was a leak in one leading to corosion on the cap leg and solder 
+            joint. A problem like this can lead to a foggy looking screen. Replacement capacitors can be found at Digikey or Mouser. When replacing caps make sure to check the 
+            voltage and capcitance of the originals, which is clearly written on the capacitors most of the time. In this case the value of the two caps are as follows: 
+            <ol>
+              <li>16V, 100uf(left)</li>
+              <li>250V, 2.2uf(right)</li>
+            </ol>
+            <p>When replacing a capacitor always match the capacitance exactly, but you can go higher in voltage because voltage is how many volts the cap can handle, not what it produces. 
+            If you can find capacitors with both correct voltage and capacitance, go with the one that matches original values.</p>
           </p>
         </div>
      </main>
@@ -40,5 +87,29 @@
         <li><a href = "sixth.html">Useful Resources</a></li>
       </ul>
      </nav>
+     <!--Slideshow Script-->
+     <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("ScreenSlides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+      }
+      </script>      
    </body>
 </html> 

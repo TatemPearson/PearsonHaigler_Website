@@ -115,3 +115,28 @@ footer li .HomeButtons a {
 footer li .HomeButtons a:hover{
     color:#ff8503; 
 }
+
+/*Slideshow Styling*/ 
+.ScreenSlideShow{
+    margin:auto; 
+    position: relative; 
+}
+
+.prev, .next{ /*next/prev buttons*/
+    cursor: pointer; 
+    position: relative; 
+    top: 50%; 
+    width: auto; 
+    padding: 5px; 
+    font-weight: bold;
+    font-size: 20px; 
+    user-select: none;
+}
+
+.next{
+    right: 0; 
+}
+
+.SlideNum{
+    display: none; 
+}
