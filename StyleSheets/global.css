@@ -27,6 +27,9 @@ h1 {
     font-size: 50px;
     color: #ff8503;
     text-align: center; 
+    min-width: 1000px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
 }
 
 /*Styling for the content of each page*/
