@@ -93,29 +93,32 @@ nav .DropdownContent li a:hover{
 } 
 
 /*the footer of the home page (wanted the navigation at the bottom and more stylized)*/
-footer{ 
-    font-size: 20px; 
+.HomeNav{ 
+    font-size: 20px;
+    position: absolute; 
+    top: 125px; 
+    right: 425px;  
 }
 
-footer li{
+.HomeNav li{
     list-style-type: none; 
     display: inline-block; 
     padding: 1rem; 
 }
 
-footer li .HomeButtons{
+.HomeNav li .HomeButtons{
     background-color: grey;
     font-size: 20px; 
     border: #ff8503 groove 8px; 
     padding: 0.5 rem; 
 }
 
-footer li .HomeButtons a {
+.HomeNav li .HomeButtons a {
     text-decoration: none;
     color: black;
 }
 
-footer li .HomeButtons a:hover{
+.HomeNav li .HomeButtons a:hover{
     color:#ff8503; 
 }
 
