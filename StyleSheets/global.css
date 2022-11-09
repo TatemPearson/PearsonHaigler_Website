@@ -122,6 +122,19 @@ nav .DropdownContent li a:hover{
     color:#ff8503; 
 }
 
+.HomeNav li .ColorToggle{
+    background-color: beige;
+    color: grey; 
+    font-size:20px; 
+    border:#ff8503 groove 8px; 
+    padding: 0.5 rem;
+}
+
+.HomeNav li .ColorToggle:hover{
+    background-color: grey; 
+    color: beige; 
+}
+
 /*Slideshow Styling*/ 
 .ScreenSlideShow{
     margin:auto; 
