@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img{
+    padding: 1rem; 
+}
+
 header img{/*puts the logo in the top left of each tab*/ 
     position: absolute;
     top: 5px;
@@ -21,6 +25,10 @@ header .PageTitle{ /*Creates a border for the title of each page, removing the r
     border-left: 0px;
     border-right: 0px; 
     margin-bottom: 25px;
+}
+
+header .PageTitle img{
+    padding: 0rem; 
 }
 
 h1 {
@@ -97,7 +105,7 @@ nav .DropdownContent li a:hover{
     font-size: 20px;
     position: absolute; 
     top: 125px; 
-    right: 425px;  
+    right: 375px;   
 }
 
 .HomeNav li{
