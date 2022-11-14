@@ -100,49 +100,6 @@ nav .DropdownContent li a:hover{
     color:#ff8503; 
 } 
 
-/*the footer of the home page (wanted the navigation at the bottom and more stylized)*/
-.HomeNav{ 
-    font-size: 20px;
-    position: absolute; 
-    top: 125px; 
-    right: 375px;   
-}
-
-.HomeNav li{
-    list-style-type: none; 
-    display: inline-block; 
-    padding: 1rem; 
-}
-
-.HomeNav li .HomeButtons{
-    background-color: grey;
-    font-size: 20px; 
-    border: #ff8503 groove 8px; 
-    padding: 0.5 rem; 
-}
-
-.HomeNav li .HomeButtons a {
-    text-decoration: none;
-    color: black;
-}
-
-.HomeNav li .HomeButtons a:hover{
-    color:#ff8503; 
-}
-
-.HomeNav li .ColorToggle{
-    background-color: beige;
-    color: grey; 
-    font-size:20px; 
-    border:#ff8503 groove 8px; 
-    padding: 0.5 rem;
-}
-
-.HomeNav li .ColorToggle:hover{
-    background-color: grey; 
-    color: beige; 
-}
-
 /*Slideshow Styling*/ 
 .ScreenSlideShow{
     margin:auto; 
