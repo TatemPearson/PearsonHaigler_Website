@@ -13,7 +13,7 @@ aside{
     position: relative; 
 }
 
-aside div .Enlargable:hover{
+.Enlargable:hover{
     width: 75%;
     height: 75%; 
 }
