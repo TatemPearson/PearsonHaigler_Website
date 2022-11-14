@@ -7,6 +7,20 @@ p {/*Setting margins for all paragraphs*/
     margin-left: 0px; 
     margin-right: auto;  
 }
+
+aside{
+    float: right; 
+    position: relative; 
+}
+
+aside div .Enlargable:hover{
+    width: 75%;
+    height: 75%; 
+}
+aside caption{
+padding: 0.5rem; 
+}
+
 #IBMPC{
     text-align: left;
 }
