@@ -12,6 +12,9 @@ aside{
     float: right; 
     position: relative; 
     display: block;
+    min-width: 500px; 
+    margin: auto; 
+    margin-right: 0px; 
 }
 
 .Enlargable:hover{
