@@ -62,17 +62,21 @@ nav .DropdownButton{
     font-size: 20px; 
     border: #ff8503 groove 8px; 
     padding: 0.5 rem;  
+    position: absolute;
+    right: 50px; 
 }
 
 nav .DropdownButton:hover{
-    color:#ff8503
+    color:#ff8503; 
 }
 
 nav .DropdownContent li{ /*The list items in the nav tab, by default you only see the Nav Button*/ 
     display: none; 
     position: relative; 
+    top: 30px; 
+    right: 40px; 
     border: #ff8503 groove 8px;
-    background-color: grey;
+    background-color: grey; 
 }
 
 nav:hover .DropdownContent li{ /*Hovering over the Nav button displays the list of other website tabs (which is the unordered list in the nav section)*/ 
