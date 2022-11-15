@@ -11,6 +11,7 @@ p {/*Setting margins for all paragraphs*/
 aside{
     float: right; 
     position: relative; 
+    display: block;
 }
 
 .Enlargable:hover{
