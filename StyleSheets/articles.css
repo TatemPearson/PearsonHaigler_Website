@@ -17,7 +17,10 @@ aside{
 .Enlargable:hover{
     width: 75%;
     height: 75%; 
+    position: relative; 
+    right: -100px; 
 }
+
 aside caption{
 padding: 0.5rem; 
 }
