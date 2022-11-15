@@ -16,15 +16,57 @@
      <main>
         <aside>
           <img src= Images/KeyTest.PNG width="737" height="196"><br>
-          <caption>A working keyboard should look something like this in a modern key tester, even if keys are functional they may not turn green</caption>
+          <caption>A working keyboard should look something like this in a modern key tester.</caption>
         </aside>
         <div id="KeyboardCable"> <!--Keyboard Container-->
-          <img src = Images/Picture6.png alt ="A picture of a rotting keyboard cable">
+          <div class="ScreenSlideShow"><!--Slideshow container-->
+            <div class="ScreenSlides"> <!--Slides-->
+              <div class="SlideNum">1/4</div>
+              <img src = Images/FrayedCable.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Example of frayed keyboard cable</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">2/4</div>
+              <img src = Images/IMG_7205.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Keyboard PCB, connector solder joints are at the top</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">3/4</div>
+              <img src = Images/Picture6.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Multimetering pin wires to get correct pinout</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">4/6</div>
+              <img src = Images/PinsToPCB.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Pinout of original cable, and how a replacement lines up in relation</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">5/6</div>
+              <img src = Images/Wires.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Lining up replacement pin wires, link provided in Useful Resources is the same cable</div>
+            </div>
+            <div class="ScreenSlides">
+              <div class="SlideNum">6/6</div>
+              <img src = Images/DIN5Pinout.png alt ="Example of screen problems" width="300" height="300"> 
+              <div class="caption">Official DIN5 Pinout.</div>
+            </div>
+            <!--Slideshow buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&laquo;</a>
+            <a class="next" onclick="plusSlides(1)">&raquo;</a>
+          </div>
           <h2>Rotting Keyboard Cable</h2>
           <p>
             Dry rot of the keyboard connector cable is common. 
             This only affects the casing and the keyboard may work just fine, but the rotting cable is unsightly and leaves flakes everywhere.
-            This is a fairly easy fix with DIN5 extension cables being common and cheap online. 
+            This is a fairly easy fix with DIN5 extension cables being common and cheap online. To take the keyboard assembly apart, 
+            remove all the keys, as the screws are located underneath them and you will want to clean them anyways. There is one screw under 
+            the logo badge on the top right of the keyboard case which can be removed with a flathead screwdiver without hurting it, since it is aluminum. 
+            You can reattach it later with double sided tape. With the replacement cable cut off the female end such that the male end (end with pins) has a desireable 
+            amount of slack. Multimeter the joints labeled 1-5 and note which pin goes where. Note that one pin on replacement cable is unused. Desolder original wire 
+            and expose the replacement pin wires. Solder the new wires in their proper places, be careful to avoid cold joints and overheating the board. After cleaning the 
+            casing reassemble the keyboard, make sure no debris is on the PCB, as it could interfere with keystrokes. Troubleshoot and fix as needed. If you cannot test on original 
+            hardware, you may need DIN5 to PS/2 adapter and possibly a PS/2 to USB adapter, there you can run it through a <a href="https://www.keyboardtester.com">key tester</a>. 
+            Note that Enter, Shift, Control, and a few others may not turn green but will be functional. 
           </p>
         </div>
         <div id="cmos"><!--CMOS Container-->
@@ -45,6 +87,7 @@
         </p>
     </div>
     </main>
+    <script src="Scripts/Slideshow.js"></script>
     <nav role="navigation">
       <button class="DropdownButton">Navigation</button>
       <ul class="DropdownContent">
