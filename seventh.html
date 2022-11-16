@@ -4,6 +4,16 @@
                <link rel ="stylesheet" href="StyleSheets/global.css">
                <link rel ="stylesheet" href="StyleSheets/form.css">
         <title>Compaq Portable III Restoration</title>
+        <style>
+            .bg{
+                background-image: url(Images/CroppedAd.png);
+                height: 100%; 
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
       </head>
       <body>
             <main>
@@ -14,23 +24,25 @@
                 </div>
                 </header> 
             </main>
-            <form method="POST" enctype="multipart/form-data">
-                <p>
-                    <label for="Name">Full Name:</label>
-                    <input type="text" name="Name" id="Name" placeholder="Shane Beamer">
-                </p>
-                <p>
-                    <label for="Email">Email:</label>
-                    <input type="text" name="Email" id="Email" placeholder="Game@Cocks.edu">
-                </p>
-                <p>
-                    <label for="Comments">Comments/Suggestions:</label>
-                    <br><textarea name="Comments" id="Comments"  rows="5" cols="35"></textarea>
-                </p>
-                <p>
-                    <input type="submit" value="Submit">
-                </p>
-            </form>
+            <div class="bg">
+                <form method="POST" enctype="multipart/form-data">
+                    <p>
+                        <label for="Name">Full Name:</label>
+                        <input type="text" name="Name" id="Name" placeholder="Shane Beamer">
+                    </p>
+                    <p>
+                        <label for="Email">Email:</label>
+                        <input type="text" name="Email" id="Email" placeholder="Game@Cocks.edu">
+                    </p>
+                    <p>
+                        <label for="Comments">Comments/Suggestions:</label>
+                        <br><textarea name="Comments" id="Comments"  rows="5" cols="35"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+            </div>
             <nav role="navigation">
                 <button class="DropdownButton">Navigation</button>
                 <ul class="DropdownContent">
