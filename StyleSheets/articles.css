@@ -12,9 +12,11 @@ aside{
     float: right; 
     position: relative; 
     display: block;
-    min-width: 500px; 
+    max-width: 750px; 
     margin: auto; 
-    margin-right: 0px; 
+    margin-right: 0px;
+    font-size: 16px;  
+    font-weight: bold; 
 }
 
 .Enlargable:hover{
@@ -22,12 +24,8 @@ aside{
     height: 75%; 
     position: relative; 
     right: -100px; 
-}
-
-aside caption{
-padding: 0.5rem; 
-font-size: 16px; 
-font-weight: bold; 
+    font-size: 20px; 
+    font-weight: bold; 
 }
 
 #IBMPC{
