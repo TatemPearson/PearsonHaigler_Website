@@ -97,7 +97,7 @@ nav .DropdownContent li{
 nav .DropdownContent li a { /*Make styling consistent with that of the home page Nav footer*/
     text-decoration: none;
     color: black;
-    padding: .5rem;
+    padding: 0.5rem;
     font: bold;
 }
 
