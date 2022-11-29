@@ -9,8 +9,8 @@ p {/*Setting margins for all paragraphs*/
 }
 
 aside{
-    float: right; 
-    position: relative; 
+    float:right;
+    position:relative;
     display: block;
     max-width: 750px; 
     margin: auto; 
